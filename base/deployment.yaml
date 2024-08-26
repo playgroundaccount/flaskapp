@@ -19,9 +19,6 @@ spec:
         image: devtestings/firstrepo:latest 
         ports:
         - containerPort: 5000
-        env:
-        - name: BANNER_COLOR
-          valueFrom:
-            configMapKeyRef:
-              name: flask-app-config  
-              key: BANNER_COLOR
+        envFrom:
+        - configMapRef:
+            name: mykustom-map
