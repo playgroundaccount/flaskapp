@@ -6,8 +6,8 @@ resources:
 
 configMapGenerator:
 - name: flask-app-config
-  literals:
-  - BANNER_COLOR=yellow
+  files:
+  - configmap.yaml 
 
 patchesStrategicMerge:
 - replicas.yaml  # Example patch file
