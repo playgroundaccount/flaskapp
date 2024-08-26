@@ -1,8 +1,6 @@
-
-patches:
-- path: replicas.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+
 resources:
 - ../../base
 
@@ -10,3 +8,6 @@ configMapGenerator:
   - name: flask-app-config
     files:
       - configmap.yaml
+
+patchesStrategicMerge:
+- replicas.yaml
