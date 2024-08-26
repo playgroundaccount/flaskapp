@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: flask-app-config
 data:
-  BANNER_COLOR: "purple"
+  BANNER_COLOR: "white"
