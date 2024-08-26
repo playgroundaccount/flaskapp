@@ -19,7 +19,7 @@ spec:
         image: devtestings/firstrepo:latest 
         ports:
         - containerPort: 5000
-    env:
+        env:
         - name: BANNER_COLOR
           valueFrom:
             configMapKeyRef:
