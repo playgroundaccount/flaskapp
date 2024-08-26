@@ -5,9 +5,8 @@ resources:
 - ../../base  # Path to your base configuration
 
 configMapGenerator:
-- name: flask-app-config
-  files:
-  - configmap.yaml 
+- name: mykustom-map
+  env: config.properties
 
 patchesStrategicMerge:
 - replicas.yaml  # Example patch file

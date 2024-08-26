@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: flask-app-config
-data:
-  BANNER_COLOR: "white"
