@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: my-container
-        image: devtestings/firstrepo:latest
+        image: devtestings/firstrepo:latest 
         ports:
         - containerPort: 5000
