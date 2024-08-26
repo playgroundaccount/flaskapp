@@ -18,4 +18,4 @@ spec:
       - name: my-container
         image: devtestings/firstrepo:latest
         ports:
-        - containerPort: 5002
+        - containerPort: 5000
